@@ -80,7 +80,6 @@ scm-api: 2.2.7
 script-security: 1.44
 simple-build-for-pipeline: 0.2
 simple-theme-plugin: 0.4
-sonar: 2.7.1
 ssh-credentials: 1.14
 ssh-slaves: 1.26
 structs: 1.14
