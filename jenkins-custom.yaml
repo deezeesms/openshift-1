@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Template
+labels:
+message: <Creation message>
+metadata:
+  name: <template name>
+objects:
+- apiVersion: v1
+  kind: BuildConfig
+  metadata:
+    name: jenkins-master
+  spec:
+    source:
+      git:
+        uri:
+        ref:
+      secrets: []
+      type: Git
+    strategy:
+      sourceStrategy:
+        from:
+          kind: ImageStreamTag
+          name: jenkins:latest
+      type: Source
+    output:
+      to:
+        kind: ImageStreamTag
+        name: custom-jenkins:latest
+parameters:
