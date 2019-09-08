@@ -94,7 +94,7 @@ objects:
       contextDir: jenkins-master
       git:
         uri: https://github.com/OpenShiftDemos/openshift-cd-demo.git
-        ref: openshift v3.10.0+54785c2-134
+        ref: OKD 3.11
       secrets: []
       type: Git
     strategy:
@@ -193,7 +193,7 @@ objects:
       contextDir: jenkins-slave
       git:
         uri: https://github.com/OpenShiftDemos/openshift-cd-demo.git
-        ref: openshift v3.10.0+54785c2-134
+        ref: OKD 3.11
       type: Git
     strategy:
       dockerStrategy:
